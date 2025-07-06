@@ -135,7 +135,6 @@
       gap: 20px;
       padding: 20px;
       background: #fefefe;
-      box-shadow: 0 -2px 5px rgba(0,0,0,0.05);
       flex-wrap: wrap;
     }
 
@@ -214,11 +213,10 @@
 
     /* === WORK PROCESS SECTION === */
     .heroo {
-      margin: 20px;
-      padding: 20px;
+      padding: 100px;
       background-color: rgb(238, 240, 243);
       align-items: center;
-      justify-content: space-between;
+      justify-content: center;
       width: 100%;
       gap: 10px;
     }
@@ -248,19 +246,21 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 90%;
+      width: 100%;
     }
 
     .master, .slave {
       display: flex;
-      margin-top: 30px;
+      justify-content: center;
+      
     }
 
     .research, .design, .analyse, .launch {
+      justify-self: center;
       border: 20px solid rgb(238, 240, 243);
       padding: 20px;
       background-color: white;
-      width: 80%;
+      width: 100%;
     }
 
     .master {
@@ -293,7 +293,6 @@
       justify-content: center;
     }
     .initials p{
-      padding: 20px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -354,36 +353,38 @@
       background-color: #A53DFF;
     }
     .project-idea {
+      padding: 100px;
       display: grid;
       grid-template-rows: repeat(3,1fr); 
       justify-content: center;
-      align-items: right;
+      align-items: center;
       width: 100%;
       height: 100%;
       background-color: #132238;
       color: white;
-      gap: 20px;
+      
     }
     .project-idea h2{
+      display: flex;
+      justify-content: center;
       width: 100%;
       height: 100%;
     }
-    .project-idea h2{
+    .project-idea h6{
+      display: flex;
+      justify-content: center;
       width: 100%;
       height: 100%;
-      gap: 60px;
     }
     .project-idea-btn{
       display: flex;
-      width: 50%;
-      height: 50%;
+      width: 100%;
+      height: 100%;
       justify-content: center;
       align-items: center;
       background-color: #A53DFF;
       color: #FFFFFF;
-      margin-right: 30px;
-      margin-left: 30px;
-      
+      size: 20px;
     }
 
     /*blog section*/
@@ -391,15 +392,18 @@
       width: 100%;
       height: 100%;
     }
-    .blog-header{
-      display: grid;
-      grid-template-rows: repeat(2,1fr);
+    .blog-header-h2{
+      display: flex;
       justify-content: center;
       align-items: center;
+      padding-top: 30px;
+      font-size: 40px;
+      
     }
-    .blog-header h2{
+    .blog-header-p{
       display: flex;
-      margin-left: 200px;
+      justify-content: center;
+      align-items: center;
     }
     .blog-container{
       display: flex;
@@ -435,13 +439,13 @@
       align-items: center;
     }
     .about-me-head{
-      width: 529px;
-      height: 338px;
+      width: 100%;
+      height: 100%;
       padding-right: 70px;
       padding-top: 40px;
     }
     .about-me-boxes{
-      width: 648px;
+      width: 100%;
       height: 100%;
       padding: 20px;
       background-color: #FFFFFF;
@@ -452,6 +456,9 @@
       width: 100%;
       padding-bottom: 10px;
     }
+    .sayhello{
+      line-height: 8;
+    }
     
     /*clients section*/
     .clients{
@@ -461,6 +468,7 @@
       grid-template-rows: repeat(3,1fr);
       justify-content: center;
       align-items: center;
+      line-height: 1.5;
     }
     .clients-head h2 , .testimonial h2 {
       display: flex;
@@ -483,11 +491,65 @@
       display: flex;
       justify-content: center;
       align-items: center;
-
     } 
+    .test h4{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .test h3{
+      display: flex;
+      justify-content: center;
+      line-height: 3;
+    }
+    .pagination{
+      display: flex;
+      justify-self: center;
+      line-height: 4;
+    }
 
+    /*diff section*/
+    .diff{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      border: solid 50px #FFFFFF;
+      border-radius: 150px;
+      padding: 40px;
+      width: 100%;
+      height: 100%;
+      background-color: #F0F1F3;
+    }
+    .socialicons-box{
+      display: flex;
+    }
+    .diffbox{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      width: 20%;
+      height: 20%;
+      line-height: 2;
+      padding-left: 20px;
+    }
+    .line-height{
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+    .underline{
+      border: none;
+      border-bottom: 2px solid #F0F1F3;
+      padding: 8px;
+      width: 250px;
+      font-size: 16px;
+    }
 
-    /* === RESPONSIVE DESIGN === 
+    .underline-input:focus {
+     border-bottom-color: #000; /* Changes color when typing */
+    }
+    .line{
+      line-height: 3;
+    }
+
+    /* === RESPONSIVE DESIGN === */
     @media (max-width: 768px) {
       .hero, .ux-designer {
         flex-direction: column;
@@ -506,7 +568,7 @@
       nav a {
         margin: 10px;
       }
-    }*/
+    }
     
   </style>
 </head>
@@ -545,17 +607,21 @@
       </div>
 
       <div class="social-media">
-        <a href="https://www.facebook.com/profile.php?id=61574953216270" target="_blank">Facebook</a>
-        <a href="https://www.instagram.com/winr_4l?igsh=MXI4aWtramg1M3B0dg==" target="_blank">Instagram</a>
+        <a href="https://www.facebook.com/profile.php?id=61574953216270" target="_blank">
+          <img src="images/socialF.svg" alt="facebook logo">
+        </a>
+        <a href="https://www.instagram.com/winr_4l?igsh=MXI4aWtramg1M3B0dg==" target="_blank">
+          <img src="images\ig.svg" alt="instagram logo">
+        </a>
       </div>
     </div>
     <div class="img">
-      <img src="images/WhatsApp Image 2025-06-16 at 12.07.22_9bfcccfd.jpg" alt="William Winner" />
+      <img src="images/First.jpg" alt="William Winner" />
     </div>
   </section>
 
   <section class="ux-designer">
-    <img src="images/WhatsApp Image 2025-06-17 at 21.03.41_701dc9b3.jpg" alt="William UX Photo">
+    <img src="images\first2.jpg" alt="William UX Photo">
     <div class="ux-text">
       <h2>Creative & Reliable Web Designer</h2>
       <p>I design clean, modern websites that don’t just look great. Whether you're a business owner, startup, or personal brand, I build responsive sites that tell your story and drive results. Let’s bring your vision to life online.</p>
@@ -594,7 +660,7 @@
         </div>
         <div class="slave">
           <div class="analyse">
-            <img src="images/analyse.png" alt="Analyse">
+            <img src="images/analyse.png" alt="Develop">
             <h6>3. Develop</h6>
             <p>I write clean, maintainable code to bring the design to life — optimizing for speed, responsiveness, and performance.</p>
           </div>
@@ -612,7 +678,7 @@
     <div>
       <div class="initials">
         <h2>Portfolio</h2>
-        <p>A snapshot of my creative process, coding environment, and design exploration. These visuals reflect my passion for clean development, intuitive user interfaces, and building websites that make an impact.</p>
+        <p>A snapshot of my creative process, coding environment, and design exploration.</p> <p>These visuals reflect my passion for clean development, intuitive user interfaces, and building websites that make an impact.</p>
       </div>
       <div class="portfolio-container">
         <div class="container-one">
@@ -666,36 +732,47 @@
         <button class="more-projectbtn">View More Project</button>
       </div>
       <div class="project-idea">
-        <h2>Got a website idea?<br>Let’s bring it to life together!</h2>
-        <h6>There are many variations of passages of Lorem Ipsum available,<br>but the majority have suffered alteration.</h6>
-        <button class="project-idea-btn">Let’s work Together &rarr;</button>
+        <div>
+        <h2>Got a website idea?</h2>
+        <h2>Let’s bring it to life together!</h2>
+        </div>
+        <div>
+        <h6>I build clean, responsive websites for freelancers, startups, and small businesses.</h6><h6>If you’re ready to launch something great, I’d love to hear from you.</h6>
+        </div>
+        <div>
+          <a href=""><img src="images\Let’s work Together.svg" alt="" class="project-idea-btn"></a>
+        </div>
       </div>
       <div>
         <div class="blog">
-          <header class="blog-header">
-            <h2>Blog</h2>
-            <p>Check out my latest blog posts where I share insights on web development, freelancing, and more.</p>
-          </header>
+          <div class="blog-header">
+            <div class="blog-header-h2">
+              <h2>Blog</h2>
+            </div>
+            <div class="blog-header-p">
+              <p>Check out my latest blog posts where I share insights on web development, freelancing, and more.</p>
+            </div>
+          </div>
           <div class="blog-container">
             <div class="blog-boxes">
               <img src="images\image7.jpg" alt="stock photo">
               <h6>22 Oct, 2020/246 Comments</h6>
-              <p>Lorem ipsum dolor sit consea. Nulla purus arcu</p>
+              <p>Getting Started as a Freelance Web Developer: Tools, Tips & First Steps</p>
             </div>
             <div class="blog-boxes">
               <img src="images\image8.jpg" alt="stock photo">
               <h6>22 Oct, 2020/246 Comments</h6>
-              <p>Lorem ipsum dolor sit consea. Nulla purus arcu</p>
+              <p>HTML vs. CSS: Understanding the Roles They Play in Web Design</p>
             </div>
             <div class="blog-boxes">
               <img src="images\image9.jpg" alt="stock photo">
               <h6>22 Oct, 2020/246 Comments</h6>
-              <p>Lorem ipsum dolor sit consea. Nulla purus arcu</p>
+              <p>From Figma to Code: How I Build UI Concepts into Responsive Websites</p>
             </div>
             <div class="blog-boxes">
               <img src="images\image10.jpg" alt="stock photo">
               <h6>22 Oct, 2020/246 Comments</h6>
-              <p>Lorem ipsum dolor sit consea. Nulla purus arcu</p>
+              <p>Top 5 Websites Every Web Developer Should Bookmark in 2025</p>
             </div>
           </div>
         </div>
@@ -704,29 +781,32 @@
       <div class="about-me">
         <div class="about-me-head">
           <h2>What I do?</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus arcu, varius eget velit non, laoreet imperdiet<br>orci. Mauris ultrices eget lorem ac vestibulum. Suspendis imperdiet,<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus arcu, varius eget velit non.</p>
-          <button>Say Hello!</button>
+          <p>I help individuals, startups, and small businesses build strong digital identities through clean, responsive, and user-centered websites. From wireframes to code, I handle every stage of the web development process with creativity and precision.</p>
+          <div class="sayhello">
+          <a href="https://wa.me/2349159369929" target="_blank"><img src="images\sayhello.svg" alt="" class="sayhello"></a>
+          </div>
         </div>
         <div class="about-me-container">
           <div class="about-me-boxes">
             <h3>User Experience (UX)</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus arcu, varius eget velit non, laoreet imperdiet orci. Mauris ultrices eget lorem ac vestibulum.</p>
+            <p>I design with users in mind — making sure every interaction feels smooth, intuitive, and meaningful. My goal is to create websites that are not just beautiful but also easy to navigate.</p>
           </div>
           <div class="about-me-boxes">
             <h3>User Interface (UI)</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus arcu, varius eget velit non, laoreet imperdiet orci. Mauris ultrices eget lorem ac vestibulum.</p>
+            <p>I craft modern, clean, and on-brand visual designs that bring digital ideas to life. From colors and typography to layout and style, I ensure every detail is purposeful.</p>
           </div>
           <div class="about-me-boxes">
             <h3>Web Development</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus arcu, varius eget velit non, laoreet imperdiet orci. Mauris ultrices eget lorem ac vestibulum.</p>
+            <p>I turn designs into fully responsive and optimized websites using HTML, CSS, and JavaScript. Whether it’s a landing page or a full site, I build with clean code and performance in mind.</p>
           </div>
         </div>
       </div>
     </div>
     <div class="clients">
       <div class="clients-head">
-        <h2>Happy Clients</h2>
-        <p>Over the years, I have had the pleasure of working with a diverse range of clients, from startups to established organizations. Here are some of the wonderful people I've collaborated with:</p>
+          <h2>Clients I Admire</h2>
+          <p>While I am just starting out professionally, I’m constantly inspired by companies and creatives who shape the digital world.</p>
+          <p>These are brands I one day hope to collaborate with — or build tools just as impactful.</p>
       </div>
       <div class="clients-icons">
         <div><img src="images\google.svg"></div>
@@ -736,12 +816,90 @@
         <div><img src="images\medium.svg"></div>
         <div><img src="images\spotify.svg"></div>
       </div>
-      <div class="testimonial">
-        <h2>Testimonial</h2>
-        <p>Here’s what some of my clients have to say about working with me:</p>
+      <div class="test">
+        <h4>“I believe in clear communication, quality work, and creative problem-solving.</h4>
+        <h4>While I’m just starting out, every project I take on is built with attention to detail and a passion for clean code.</H4>
+        <H4>Looking forward to turning your ideas into websites people love to use.”</h4>
+        <h3>WILLIAM WINNER</h3>
+        <h4>Web Developer & Freelancer</h4>
       </div>
-      
+      <div class="test-image">
+        <img src="images\Pagination.svg" alt="" class="pagination">
+      </div>
     </div>
+    <div class="diff">
+      <div>
+        <div>
+          <h2>Let’s discuss your Project</h2>
+          <p>There are many variations of passages of Lorem Ipsu available. but the majority have suffered alte.</p>
+      </div>
+      <div class="line-height">
+        <div class="diffbox">
+          <div>
+            <img src="images/loca1.svg" alt="">
+          </div>
+          <div>
+            <h6>Address:</h6>
+            <h5>Abuja,Nigeria.</h5>
+          </div>
+        </div>
+        <div class="diffbox">
+          <div>
+            <img src="images\loca2.svg" alt="">
+          </div>
+          <div>
+            <h6>My Email:</h6>
+            <h5>williamwinnerabraham@gmail.com</h5>
+          </div>
+        </div>
+        <div class="diffbox">
+          <div>
+            <img src="images\loca2.svg" alt="">
+          </div>
+          <div>
+            <h6>WhatsApp:</h6>
+            <h5>080244856</h5>
+          </div>
+        </div>
+      </div>
+      <div class="socialicons-box">
+        <div><img src="images\socialF.svg" alt="" class="socialicons"></div>
+        <div><img src="images\socialB.svg" alt="" class="socialicons"></div>
+        <div><img src="images\socialN.svg" alt="" class="socialicons"></div>
+        <div><img src="images\socialI.svg" alt="" class="socialicons"></div>
+        <div><img src="images\socialL.svg" alt="" class="socialicons"></div>
+      </div>
+      </div>
+      <div>
+        <div><p>There are many variations of passages of Lorem Ipsu available,<br>but the majority have suffered alte.</p></div>
+        <div class="line">
+          <p>name* <input type="text" class="underline"></p>
+          <p>Email*<input type="text" class="underline"></p>
+          <p>Location <input type="text" class="underline"></p>
+          <div class="split"><p>Budget*<input type="text" class="underline"></p>
+          <p>Subject*<input type="text" class="underline"></p></div>
+          <p>Message*<input type="text" class="underline"></p>
+        </div>
+        <div>
+          <a href="">
+            <img src="images\Button.svg" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+    <footer class="footer2">
+      <div>
+        <div class="">
+          <nav>
+            <a href="" class="nav">Home</a>
+            <a href="">About</a>
+            <a href="">Services</a>
+            <a href="">Portfolio</a>
+            <a href="">Contact</a>
+          </nav>
+        </div>
+      </div>
+    </footer>
   </section>
 
 </body>
