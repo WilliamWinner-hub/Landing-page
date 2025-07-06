@@ -15,14 +15,14 @@
 
     body {
       font-family: 'Poppins', sans-serif;
-      background-color: #f9f9f9;
+      background-color: #FFFFFF;
       color: #222;
-      line-height: 1.6;
     }
 
     header {
+      width: 100%;
       background: #fff;
-      padding: 20px 40px;
+      padding: 20px;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -53,9 +53,9 @@
       padding: 60px 20px;
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
-      gap: 40px;
+      gap: 90px;
     }
 
     .hero-content {
@@ -151,9 +151,9 @@
       background-color: #fff;
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: center;
       flex-wrap: wrap;
-      gap: 40px;
+      gap: 90px;
     }
 
     .ux-designer img {
@@ -230,7 +230,7 @@
       padding: 20px;
       justify-content: center;
       align-items: center;
-      width: 80%;
+      width: 100%;
     }
 
     .container h6 {
@@ -286,24 +286,27 @@
     .initials{
       width: 100%;
       height: 100%;
-      padding-right: 20px;
-      padding-left: 20px;
-      justify-content: space-between;
     }
     .initials h2{
+      font-size: 40px;
       display: flex;
-      color: #132238;
-      font-size: 48px;
-      font-weight: 600;
+      justify-content: center;
     }
     .initials p{
+      padding: 20px;
       display: flex;
+      justify-content: center;
+      align-items: center;
     }
     .servants{
       margin: 20px;
       border: 1px solid #E6E8EB;
       width: 424px;
       gap: 30px;
+    }
+    .servants p{
+      padding-top: 15px;
+      padding-bottom: 10px;
     }
     .servants-img{
       width: 424px;
@@ -314,7 +317,7 @@
 
     }
     .case-study{
-      border: solid 1px #A53DFF;
+      border: solid 2px #A53DFF;
       width: 173px;
       height: 48px;
       padding-top: 12px;
@@ -323,32 +326,166 @@
       padding-left: 24px;
       gap: 12px;
       color: #A53DFF;
+      font-size: medium;
       font-weight: 600;
       line-height: 24px;
+      justify-content: center;
+      align-items: center;
     }
     .more-project{
-      display: flex;
-      width: 149px;
-      height: 48px;
-      border: 4px #f4f1f6;
-      padding-top:12px ;
-      padding-left: 24px;
-      padding-bottom: 12px;
-      padding-right: 24px;
-      gap: 12px;
+      width: 100%;
+      height: 100%;
+      border: 20px #FFFFFF;
+      padding-top:30px ;
+      padding-left: 700px;
+      padding-bottom: 30px;
+      padding-right: 700px;
+      gap: 70px;
+      color: blue;
       
     }
     .more-projectbtn{
-      width: 101px;
-      height: 24px;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
       font-weight: 800;
       size: 16px;
-      color: hsl(248, 100%, 50%);
+      color: #FFFFFF;
+      background-color: #A53DFF;
     }
-    .project-idea{
+    .project-idea {
+      display: grid;
+      grid-template-rows: repeat(3,1fr); 
+      justify-content: center;
+      align-items: right;
+      width: 100%;
+      height: 100%;
       background-color: #132238;
       color: white;
+      gap: 20px;
     }
+    .project-idea h2{
+      width: 100%;
+      height: 100%;
+    }
+    .project-idea h2{
+      width: 100%;
+      height: 100%;
+      gap: 60px;
+    }
+    .project-idea-btn{
+      display: flex;
+      width: 50%;
+      height: 50%;
+      justify-content: center;
+      align-items: center;
+      background-color: #A53DFF;
+      color: #FFFFFF;
+      margin-right: 30px;
+      margin-left: 30px;
+      
+    }
+
+    /*blog section*/
+    .blog{
+      width: 100%;
+      height: 100%;
+    }
+    .blog-header{
+      display: grid;
+      grid-template-rows: repeat(2,1fr);
+      justify-content: center;
+      align-items: center;
+    }
+    .blog-header h2{
+      display: flex;
+      margin-left: 200px;
+    }
+    .blog-container{
+      display: flex;
+      margin: 60px;
+      gap: 20px;
+      
+    }
+    .blog-boxes{
+      width: 100%;
+      height: 350px;
+      border: 2px solid #E6E8EB;
+    }
+    .blog-boxes img{
+      width: 100%;
+      height: 226px;
+    }
+    .pagination img{
+      margin: 40px;
+      display: flex;
+      width: 70px;
+      border: solid red;
+      justify-content: center;
+      padding: 80px;
+    }
+
+    /*about-me section*/
+    .about-me{
+      width: 100%;      
+      background-color: #F0F1F3;
+      padding: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .about-me-head{
+      width: 529px;
+      height: 338px;
+      padding-right: 70px;
+      padding-top: 40px;
+    }
+    .about-me-boxes{
+      width: 648px;
+      height: 100%;
+      padding: 20px;
+      background-color: #FFFFFF;
+      border: solid 10px #F0F1F3;
+    }
+    .about-me-container h3{
+      justify-content: center;
+      width: 100%;
+      padding-bottom: 10px;
+    }
+    
+    /*clients section*/
+    .clients{
+      padding: 30px;
+      width: 100%;
+      display: grid;
+      grid-template-rows: repeat(3,1fr);
+      justify-content: center;
+      align-items: center;
+    }
+    .clients-head h2 , .testimonial h2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 50px;
+      font-weight: 20px;
+    }
+
+    .clients-icons{
+      width: 100%;
+      display: flex;
+    }
+    .testimonial{
+      width: 100%;
+    }
+    
+    .clients-head p , .testimonial p {
+      font-size: small;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    } 
+
 
     /* === RESPONSIVE DESIGN === 
     @media (max-width: 768px) {
@@ -439,7 +576,7 @@
       <div>
         <div class="work-process">
           <h2>Work Process</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus arcu, varius eget velit non, laoreet imperdiet orci. Mauris ultrices eget lorem ac vestibulum.</p>
+          <p>I follow a streamlined process to deliver clean, responsive, and user-focused websites that help businesses and individuals grow their online presence.</p>
         </div>
       </div>
       <div>
@@ -447,24 +584,24 @@
           <div class="research">
             <img src="images/Research.png" alt="Research">
             <h6>1. Research</h6>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus arcu.</p>
+            <p>I begin by understanding your brand, goals, and target audience to ensure your website is built with purpose and strategy.</p>
           </div>
           <div class="design">
             <img src="images/Design.png" alt="Design">
             <h6>2. Design</h6>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus arcu.</p>
+            <p>I create modern, user-friendly designs that reflect your brand and make your site easy to navigate across all devices.</p>
           </div>
         </div>
         <div class="slave">
           <div class="analyse">
             <img src="images/analyse.png" alt="Analyse">
-            <h6>3. Analyse</h6>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus arcu.</p>
+            <h6>3. Develop</h6>
+            <p>I write clean, maintainable code to bring the design to life — optimizing for speed, responsiveness, and performance.</p>
           </div>
           <div class="launch">
             <img src="images/Launch.png" alt="Launch">
             <h6>4. Launch</h6>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus arcu.</p>
+            <p>After thorough testing, your site goes live — ready to engage visitors and support your business goals from day one.</p>
           </div>
         </div>
       </div>
@@ -475,64 +612,135 @@
     <div>
       <div class="initials">
         <h2>Portfolio</h2>
-        <p>There are many variations of passages of Lorem Ipsum available,but the majority have suffered alteration.</p>
+        <p>A snapshot of my creative process, coding environment, and design exploration. These visuals reflect my passion for clean development, intuitive user interfaces, and building websites that make an impact.</p>
       </div>
       <div class="portfolio-container">
         <div class="container-one">
           <div class="servants">
-            <img src="images\image1.jpg" alt="icon photo" class="servants-img">
-            <h6>UI-UX DESIGN</h6>
-            <h2>Product Admin Dashboard</h2>
-            <p>Vivamus eleifend convallis ante, non pharetra libero molestie laoreet. Donec id imperdiet lacus.</p>
+            <img src="images\image1.jpg" alt="Coding workspace" class="servants-img">
+            <h6>In the Works</h6>
+            <h2>Clean, Semantic Code</h2>
+            <p>Focused on writing well-structured, accessible HTML and CSS that forms the solid foundation for any website.</p>
             <p class="case-study">case study &rarr;</p>
           </div>
           <div class="servants">
-            <img src="images\image2.jpg" alt="icon photo" class="servants-img">
-            <h6>UI-UX DESIGN</h6>
-            <h2>Product Admin Dashboard</h2>
-            <p>Vivamus eleifend convallis ante, non pharetra libero molestie laoreet. Donec id imperdiet lacus.</p>
-           <p class="case-study">case study &rarr;</p>
+            <img src="images\image2.jpg" alt="Developer at work" class="servants-img">
+            <h6>Frontend Practice</h6>
+            <h2>Responsive Layouts</h2>
+            <p>Experimenting with mobile-first design and grid systems to ensure websites look and perform beautifully on all devices.</p>
+            <p class="case-study">case study &rarr;</p>
           </div>
           <div class="servants">
-            <img src="images\image3.jpg" alt="icon photo" class="servants-img">
-            <h6>UI-UX DESIGN</h6>
-            <h2>Product Admin Dashboard</h2>
-            <p>Vivamus eleifend convallis ante, non pharetra libero molestie laoreet. Donec id imperdiet lacus.</p>
+            <img src="images\image3.jpg" alt="Code on screen" class="servants-img">
+            <h6>Design & Dev</h6>
+            <h2>UI Concept Mockups</h2>
+            <p>Designing and translating sleek user interfaces into functional layouts using HTML, CSS, and Figma-based concepts.</p>
            <p class="case-study">case study &rarr;</p>
           </div>
         </div>
         <div class="container-two">
           <div class="servants">
-            <img src="images\image4.jpg" alt="" class="servants-img">
-            <h6>UI-UX DESIGN</h6>
-            <h2>Product Admin Dashboard</h2>
-            <p>Vivamus eleifend convallis ante, non pharetra libero molestie laoreet. Donec id imperdiet lacus.</p>
+            <img src="images\image4.jpg" alt="Workspace tools" class="servants-img">
+            <h6>Freelance Workflow</h6>
+            <h2>Tool-Focused Setup</h2>
+            <p>Creating workflows with VS Code, GitHub, and browser dev tools — the essentials that power my freelance projects.</p>
            <p class="case-study">case study &rarr;</p>
           </div>
           <div class="servants">
-            <img src="images\image5.jpg" alt="" class="servants-img">
-            <h6>UI-UX DESIGN</h6>
-            <h2>Product Admin Dashboard</h2>
-            <p>Vivamus eleifend convallis ante, non pharetra libero molestie laoreet. Donec id imperdiet lacus.</p>
+            <img src="images\image5.jpg" alt="Typing code" class="servants-img">
+            <h6>Practice Projects</h6>
+            <h2>Passion & Precision</h2>
+            <p>Using personal mini-projects to fine-tune animation, layout control, and creative use of modern CSS techniques.</p>
            <p class="case-study">case study &rarr;</p>
           </div>
           <div class="servants">
-            <img src="images\image6.jpg" alt="" class="servants-img">
-            <h6>UI-UX DESIGN</h6>
-            <h2>Product Admin Dashboard</h2>
-            <p>Vivamus eleifend convallis ante, non pharetra libero molestie laoreet. Donec id imperdiet lacus.</p>
+            <img src="images\image6.jpg" alt="Responsive design" class="servants-img">
+            <h6>Growth in Progress</h6>
+            <h2>From Concept to Code</h2>
+            <p>Each photo tells the story of learning, experimenting, and building the kind of web experiences I aim to deliver professionally.</p>
            <p class="case-study">case study &rarr;</p>
           </div>
         </div>
       </div>
       <div class="more-project">
-        <button class="more-projectbtn">More Project</button>
+        <button class="more-projectbtn">View More Project</button>
       </div>
       <div class="project-idea">
-        <p>Do you have Project Idia?<br>Let's discuss your project!</p>
-        <p>There are many variations of passages of Lorem Ipsum available,<br>but the majority have suffered alteration.</p>
-        <button>Let’s work Together &rarr;</button>
+        <h2>Got a website idea?<br>Let’s bring it to life together!</h2>
+        <h6>There are many variations of passages of Lorem Ipsum available,<br>but the majority have suffered alteration.</h6>
+        <button class="project-idea-btn">Let’s work Together &rarr;</button>
       </div>
+      <div>
+        <div class="blog">
+          <header class="blog-header">
+            <h2>Blog</h2>
+            <p>Check out my latest blog posts where I share insights on web development, freelancing, and more.</p>
+          </header>
+          <div class="blog-container">
+            <div class="blog-boxes">
+              <img src="images\image7.jpg" alt="stock photo">
+              <h6>22 Oct, 2020/246 Comments</h6>
+              <p>Lorem ipsum dolor sit consea. Nulla purus arcu</p>
+            </div>
+            <div class="blog-boxes">
+              <img src="images\image8.jpg" alt="stock photo">
+              <h6>22 Oct, 2020/246 Comments</h6>
+              <p>Lorem ipsum dolor sit consea. Nulla purus arcu</p>
+            </div>
+            <div class="blog-boxes">
+              <img src="images\image9.jpg" alt="stock photo">
+              <h6>22 Oct, 2020/246 Comments</h6>
+              <p>Lorem ipsum dolor sit consea. Nulla purus arcu</p>
+            </div>
+            <div class="blog-boxes">
+              <img src="images\image10.jpg" alt="stock photo">
+              <h6>22 Oct, 2020/246 Comments</h6>
+              <p>Lorem ipsum dolor sit consea. Nulla purus arcu</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-me">
+        <div class="about-me-head">
+          <h2>What I do?</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus arcu, varius eget velit non, laoreet imperdiet<br>orci. Mauris ultrices eget lorem ac vestibulum. Suspendis imperdiet,<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus arcu, varius eget velit non.</p>
+          <button>Say Hello!</button>
+        </div>
+        <div class="about-me-container">
+          <div class="about-me-boxes">
+            <h3>User Experience (UX)</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus arcu, varius eget velit non, laoreet imperdiet orci. Mauris ultrices eget lorem ac vestibulum.</p>
+          </div>
+          <div class="about-me-boxes">
+            <h3>User Interface (UI)</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus arcu, varius eget velit non, laoreet imperdiet orci. Mauris ultrices eget lorem ac vestibulum.</p>
+          </div>
+          <div class="about-me-boxes">
+            <h3>Web Development</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus arcu, varius eget velit non, laoreet imperdiet orci. Mauris ultrices eget lorem ac vestibulum.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="clients">
+      <div class="clients-head">
+        <h2>Happy Clients</h2>
+        <p>Over the years, I have had the pleasure of working with a diverse range of clients, from startups to established organizations. Here are some of the wonderful people I've collaborated with:</p>
+      </div>
+      <div class="clients-icons">
+        <div><img src="images\google.svg"></div>
+        <div><img src="images\dribbble.svg"></div>
+        <div><img src="images\linkedin.svg"></div>
+        <div><img src="images\amazon.svg"></div>
+        <div><img src="images\medium.svg"></div>
+        <div><img src="images\spotify.svg"></div>
+      </div>
+      <div class="testimonial">
+        <h2>Testimonial</h2>
+        <p>Here’s what some of my clients have to say about working with me:</p>
+      </div>
+      
     </div>
   </section>
 
